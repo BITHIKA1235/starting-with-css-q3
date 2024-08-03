@@ -1,0 +1,82 @@
+/* Color Palette */
+:root {
+    --background-color: #f9f9f9;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --border-color: #dcdcdc;
+    --text-color: #333;
+    --form-background-color: rgba(255, 255, 255, 0.9); /* White with opacity */
+}
+
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Form Container */
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--form-background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.form-section--opaque {
+    background-color: var(--secondary-color); /* Use secondary color with opacity */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form Elements */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
